@@ -1,5 +1,13 @@
 import pytest
 
+"""
+If we scan through the original array, we observe that the 2D pattern begins at the second row and the third column
+OverflowErrorthe larger grid (the  in the second row and third column of the larger grid is the top-left corner of the pattern we are searching for).
+
+So, a 2D pattern of  digits is said to be present in a larger grid , if the latter contains a contiguous, rectangular
+2D grid of digits matching with the pattern , similar to the example shown above.
+"""
+
 @pytest.mark.parametrize(
     'grid, pattern', [
         (

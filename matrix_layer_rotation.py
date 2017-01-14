@@ -43,7 +43,7 @@ arr = np.array([
 ROWS, COLS = arr.shape
 R = 1
 
-# If we rotate F = 2 * (ROWS - 1) + 2 * (COLD - 1) times we'll come back to initial position, no reason for rotating
+# If we rotate F = 2 * (ROWS - 1) + 2 * (COLS - 1) times we'll come back to initial position, no reason for rotating
 # more than that
 R = R % (2 * (ROWS + COLS) - 4)
 
